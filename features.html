@@ -2,20 +2,26 @@
 <html>
   <head>
     <style>
-      .container, div {
-       height: 50px;
-       width: 50px;
+      .square {
+       width: 100%;
+       height: 0;
+       padding-top: 100%;
        background-color: #fff;
-       border-radius: 5px;
-       width: 3000px
-       height: 1500px;
+       position: relative;
+      }
+      .content {
+       position: absolute;
+       top: 0;
+       left: 0;
       }
       body {
-           background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+       background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
       }
     </style>
   </head>
   <body>
-    <div class="square" class="Features" class="container"></div>
+    <div class="square" class="Features">
+      <div class="content"></div>
+    </div>
   </body>
 </html>
